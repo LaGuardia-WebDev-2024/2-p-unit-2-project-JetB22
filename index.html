@@ -31,7 +31,7 @@ Select ONE Additional Feature to Add
                 border-color: black;
             border-style:double;}
 
-            h1{ background-color: rgba(8, 24, 72, 0.7);width: 1500px;}
+            .typewriter-animation{ }
 
             #The-Bad {background-color: rgba(10,86,158, 0.75);}
 
@@ -50,14 +50,44 @@ Select ONE Additional Feature to Add
                 border-style:solid;
                 border-color: rgb(0, 0, 0);
             }
-
             
+            .cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid transparent;
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+        .typewriter-animation {background-color: rgba(8, 24, 72, 0.7);width: 1500px;
+     animation: 
+    typewriter 4s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+    }
+        @keyframes typewriter {
+     from { width: 0px; }
+    to { width: 1500px; }
+    }
+        
+
+        .P{color: transparent;
+        border-color:transparent ;}
+   
+           
         </style>
     </head>
-<body>
-    <audio src=""></audio>
+
+    <body>
+    
     <center><strong>
-        <h1>Welcome To Berk</h1>
+        
+        <p class="P">p</p>
+        
+        <h1 class="cursor typewriter-animation">THIS IS BERK</h1>
 
         <h2 id="The-Bad">Welcome!</h2>
 
